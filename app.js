@@ -6,7 +6,7 @@ const path = require("path");
 const ejsMate =require("ejs-mate")
 
 
-const MONGO_URL = "mongodb://localhost:27017/Our_Muzaffarpur";
+const MONGO_URL = "mongodb://localhost:27017/Unseen_Muzaffarpur";
 
 main().then(() =>{
     console.log("Connected to DB");
