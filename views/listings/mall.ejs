@@ -1,4 +1,6 @@
 <% layout("./layouts/boilerplate") %>
 <body>
-    <img src="https://content.jdmagicbox.com/comp/muzaffarpur/k1/9999px621.x621.220318221946.r3k1/catalogue/maa-kali-vaishno-mandir-kalyani-muzaffarpur-temples-d6LJ292fa7.jpg" alt="image not found">
+    <% for(let data of allListings){%>
+        <h2><%=data.title%></h2>
+    <%}%>
 </body>

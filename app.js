@@ -30,9 +30,9 @@ app.set("views", path.join(__dirname,"views"));
 app.get("/" ,(req,res) =>{
     res.render("./listings/index.ejs")
 })
-app.get("/mall",(req,res) =>{
-    console.log("Working");
-    res.render("./listings/mall.ejs");
+app.get("/mall",async (req,res) =>{
+    const allListings = await Listing.find({});
+    res.render("./listings/mall.ejs",{allListings});
 });
 
 // app.get("/", async(req,res) =>{

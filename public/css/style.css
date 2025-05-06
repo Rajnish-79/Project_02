@@ -891,6 +891,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #007BFF;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
+/* my custom styel */
 /* Icons style */
 .icon{
     width: 8rem;
@@ -908,6 +909,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: #007BFF;}
 #my_team:hover{
     background-color: #007BFF;
 }
+.img-size{
+    width:120px;
+    height:120px;
+}
+
 
 /* contact-form */
 
