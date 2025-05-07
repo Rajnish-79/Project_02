@@ -29,7 +29,25 @@ app.set("views", path.join(__dirname,"views"));
 
 app.get("/" ,(req,res) =>{
     res.render("./listings/index.ejs")
-})
+});
+app.get("/team", (req,res) =>{
+    res.render("./listings/team.ejs");
+});
+app.get("/resturants", (req,res) =>{
+    res.render("./listings/resturants.ejs");
+});
+app.get("/religious_place", (req,res) =>{
+    res.render("./listings/religious_place.ejs");
+});
+app.get("/park", (req,res) =>{
+    res.render("./listings/park.ejs");
+});
+app.get("/hotel", (req,res) =>{
+    res.render("./listings/hotel.ejs");
+});
+app.get("/admin", (req,res) =>{
+    res.render("./listings/admin/admin.ejs");
+});
 app.get("/mall",async (req,res) =>{
     const allListings = await Listing.find({});
     res.render("./listings/mall.ejs",{allListings});
