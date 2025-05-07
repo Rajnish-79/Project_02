@@ -1,1 +1,19 @@
 <% layout("./layouts/boilerplate") %>
+<body>
+    <% for(let data of allHotel){%>
+        
+        <div class="col-md-4 col-sm-6" style="margin-top: 20px;">
+            <div class="single-blog-item">
+                <div class="single-blog-item-img">
+                    <img src="<%=data.image%>" alt="blog image" class="img-sizel">
+                </div>
+                <div class="single-blog-item-txt">
+                        
+                    <p>
+                        <h4><%=data.title%></h4>
+                    </p>
+                </div>
+            </div>
+        </div>
+    <%}%>
+</body>

@@ -30,33 +30,41 @@ app.set("views", path.join(__dirname,"views"));
 app.get("/" ,(req,res) =>{
     res.render("./listings/index.ejs")
 });
+
 app.get("/team", (req,res) =>{
     res.render("./listings/team.ejs");
 });
-app.get("/resturants", (req,res) =>{
-    res.render("./listings/resturants.ejs");
+
+app.get("/resturants", async(req,res) =>{
+    const allResturants = await Listing.find({type:"Restaurant"})
+    res.render("./listings/resturants.ejs",{allResturants});
 });
-app.get("/religious_place", (req,res) =>{
-    res.render("./listings/religious_place.ejs");
+
+app.get("/religious_place", async (req,res) =>{
+    const allReligious = await Listing.find({type:"Religious"});
+    res.render("./listings/religious_place.ejs",{allReligious});
 });
-app.get("/park", (req,res) =>{
-    res.render("./listings/park.ejs");
+
+app.get("/park", async(req,res) =>{
+    const allPark = await  Listing.find({type:"Park"});
+    res.render("./listings/park.ejs",{allPark});
 });
-app.get("/hotel", (req,res) =>{
-    res.render("./listings/hotel.ejs");
+
+app.get("/hotel", async(req,res) =>{
+    const allHotel = await Listing.find({type:"Hotel"});
+    res.render("./listings/hotel.ejs",{allHotel});
 });
+
 app.get("/admin", (req,res) =>{
     res.render("./listings/admin/admin.ejs");
 });
+
 app.get("/mall",async (req,res) =>{
-    const allListings = await Listing.find({});
-    res.render("./listings/mall.ejs",{allListings});
+    const allMall = await Listing.find({type:"Mall"});
+    res.render("./listings/mall.ejs",{allMall});
 });
 
-// app.get("/", async(req,res) =>{
-//    const allListings = await Listing.find({});
-//    res.render("./listings/index.ejs", {allListings});
-// });
+
 
 app.listen( 9090, ()=>{
     console.log("Server is listening to port 9090 ");

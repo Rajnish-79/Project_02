@@ -913,7 +913,31 @@ nav.navbar.bootsnav .navbar-toggle i{color: #007BFF;}
     width:120px;
     height:120px;
 }
+.img-sizel{
+    width:40rem;
+    height:30rem;
+}
+/* Tema_member section */
+.single-explore-img img{
+    border:1px solid blue;
+    border-radius: 1rem;
+    height: 27rem;
+    width: 30rem;
 
+}
+.single-blog-item-img img{
+    border:1px solid blue;
+    border-radius: 1rem;
+}
+.team_detaile{
+   
+   margin-top: 10px;
+   margin-left:10px;
+}
+.fsize{
+    font-size: 17px;
+    font-weight: 400;
+}
 
 /* contact-form */
 
