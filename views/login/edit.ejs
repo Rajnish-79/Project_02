@@ -2,7 +2,7 @@
 <div class="row mt-2">
     <div class="col-8 offset-2">
     <h3>Edit Place</h3>
-    <form method="POST" action="/listings/<%=place._id%>?_method=PUT">
+    <form method="POST" action="/login/allPlaces/<%=place._id%>?_method=PUT">
         <div class="mb-3">
             <label for="title" class="form-label">Title *</label>
             <input name="listing[title]" value="<%= place.title%>" type="text" clss="form-control"> 
@@ -18,7 +18,7 @@
         <div class="row">
             <div class="mb-3 col-md-4">
                 <label for="price" class="form-label">Type *</label>
-                <input name="listing[price]" value="<%= place.type%>" type="number" class="form-control">
+                <input name="listing[price]" value="<%= place.type%>" type="text" class="form-control">
             </div>
             <div class="mb-3 col-md-8">
                 <label for="country" class="form-label">City *</label>
