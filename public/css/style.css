@@ -940,7 +940,27 @@ nav.navbar.bootsnav .navbar-toggle i{color: #007BFF;}
 }
 
 /* contact-form */
-
+/* login */
+.slogin{
+    margin:20px 10px 50px 10px;
+}
+.login{
+    height:15rem;
+    width:40%;
+   border: 1px solid black;
+   border-radius: 5%;
+   text-align: center;
+   background-color:rgba(0, 0, 255, 0.633);
+   
+}
+.login-style{
+    color:#000;
+    margin-top:10px;
+}
+.login-style button{
+    border: 1px solid white;
+}
+  
 
 
 /*========================Thank you=================

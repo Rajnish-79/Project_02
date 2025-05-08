@@ -55,13 +55,45 @@ app.get("/hotel", async(req,res) =>{
     res.render("./listings/hotel.ejs",{allHotel});
 });
 
-app.get("/admin", (req,res) =>{
-    res.render("./listings/admin/admin.ejs");
+app.get("/login", (req,res) =>{
+    res.render("./listings/login.ejs");
 });
 
 app.get("/mall",async (req,res) =>{
     const allMall = await Listing.find({type:"Mall"});
     res.render("./listings/mall.ejs",{allMall});
+});
+app.get("/login/allPlaces", async(req,res) =>{
+    const allPlaces = await Listing.find({});
+    res.render("./login/all_places.ejs",{allPlaces});
+});
+//Add new Places
+app.get("/login/allPlaces/new", (req,res) =>{
+    res.render("./login/new.ejs");
+});
+//All Places
+app.post("/login/allPlaces", async (req,res)=>{
+    let newPlace =  new Listing(req.body.allPlaces);
+    await newPlace.save();
+    res.redirect("/login/allPlaces");
+  });
+  //Show Routes
+  app.get("/login/allPlaces/:id",async (req,res) =>{
+    let {id} = req.params;
+    const place = await Listing.findById(id);
+    res.render("./login/show.ejs", {place});
+});
+//Edit Routes
+app.get("/login/allPlaces/:id/edit", async (req,res) =>{
+    let {id} = req.params;
+    const place = await Listing.findById(id);
+    res.render("./login/edit.ejs", {place});
+});
+// Update routes
+app.put("/login/allPlaces/:id", async (req,res) =>{
+    let {id} = req.params;
+    await Listing.findByIdAndUpdate(id, req.body.listing, {runValidators: true});
+    res.redirect(`/login/allPlaces`);
 });
 
 

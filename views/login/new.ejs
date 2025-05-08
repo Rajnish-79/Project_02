@@ -1,0 +1,54 @@
+<% layout("./layouts/loginBoilerplate") %>
+<div class="row">
+    <div class="col-8 offset-2">
+
+    <h3>Add New Place</h3>
+    <form method="POST" action="/login/allPlaces">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title *</label>
+            <input 
+                name="listing[title]" placeholder="Add a catchy title" type="text" class="form-control" id="title" required
+            >
+        </div>
+        <div class="mb-3">
+            <label for="descreption" class="form-label">Descreption</label>
+            <br>
+            <textarea  
+                name="listing[description]"  class="form-contro" required >
+            </textarea>
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Image Link</label>
+            <input 
+                name="listing[image]" placeholder="Enter image path" type="text" class="form-control" id="image" required
+            >
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-4">
+                <label for="price" class="form-label">Location *</label>
+                <input 
+                    name="listing[price]" placeholder="Enter location" type="text" class="form-control" id="price" required
+                >
+            </div>
+            <div class="mb-3 col-md-8">
+                <label for="country" class="form-label">City *</label>
+                <input 
+                    name="listing[country]" 
+                    placeholder="India" type="text" id="country" class="form-control" required
+                >
+            </div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="location" class="form-label">Type *</label>
+            <input 
+                name="listing[location]" placeholder="Religious,Mall,Park,Hotel,Restaurant" type="text" id="location" class="form-control"
+                required
+            >
+        </div>
+        
+        <button class="btn btn-dark add-btn">Add</button>
+        <br><br>
+    </form>
+    </div>
+</div>

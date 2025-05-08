@@ -1,0 +1,22 @@
+<% layout("./layouts/loginBoilerplate") %>
+<body>
+    <% for(let data of allPlaces){%>
+        
+        <div class="col-md-4 col-sm-6" style="margin-top: 20px;">
+            <a href="/login/allPlaces/<%= data._id%>" class="listing-link">
+                <div class="single-blog-item">
+                    <div class="single-blog-item-img">
+                        <img src="<%=data.image%>" alt="blog image" class="img-sizel">
+                    </div>
+                    <div class="single-blog-item-txt">
+                            
+                        <p>
+                            <h4><%=data.title%></h4>
+                        </p>
+                    </div>
+                    
+                </div>
+            </a>
+        </div>
+    <%}%>
+</body>

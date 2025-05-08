@@ -1,0 +1,29 @@
+<% layout("./layouts/loginBoilerplate") %>
+
+    <div class="row">
+        <div class="col-8 offset-3 mt-3">
+          <h3>Place  Details</h3>
+        </div>
+         <div class="card col-6 offset-3 show-card">
+            <img src="<%=place.image%>" class="card-img-top show-img" alt="Image Not Found">
+            <div class="card-body">
+                <p class="card-text">
+                    <b><%=place.title%></b><br>
+                    <%=place.description%><br>
+                    <%=place.location%><br>
+                    <%=place.city%>
+                </p>
+            </div>
+         </div>
+         <br>
+        
+         
+    </div>
+    <div class="btns">
+        <a href="/login/allPlaces/<%=place._id%>/edit" class="btn btn-dark   col-1 offset-3 edit-btn">Edit</a>  
+        <form method="POST" action="/listings/<%=place._id%>?_method=DELETE">
+            <button  class="btn btn-dark  offset-5">Delete</button>
+         </form>
+     </div>
+     <br><br>
+
