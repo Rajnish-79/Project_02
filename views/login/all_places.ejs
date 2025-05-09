@@ -1,22 +1,24 @@
 <% layout("./layouts/loginBoilerplate") %>
 <body>
-    <% for(let data of allPlaces){%>
-        
-        <div class="col-md-4 col-sm-6" style="margin-top: 20px;">
+    <h3>All Listings</h3>
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+        <% for(let data of allPlaces){%>
             <a href="/login/allPlaces/<%= data._id%>" class="listing-link">
-                <div class="single-blog-item">
-                    <div class="single-blog-item-img">
-                        <img src="<%=data.image%>" alt="blog image" class="img-sizel">
+                <div class="card col">
+                    <img src="<%=data.image%>" class="card-img-top" alt="listing image" style="height: 20rem;">
+                    <div class="card-img-overlay"></div>
+                    <div class="card-body">
+                      <p class="card-text">
+                        <b><%=data.title%></b><br>
+                        <h6><%=data.description%></h6><br>
+                        <b>Location:</b> <%=data.location%> <br>
+
+                    </p>
                     </div>
-                    <div class="single-blog-item-txt">
-                            
-                        <p>
-                            <h4><%=data.title%></h4>
-                        </p>
-                    </div>
-                    
-                </div>
+                  </div>
             </a>
-        </div>
-    <%}%>
+            
+              <%}%>
+      
+    </div>
 </body>
