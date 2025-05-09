@@ -96,6 +96,12 @@ app.put("/login/allPlaces/:id", async (req,res) =>{
     await Listing.findByIdAndUpdate(id, req.body.listing, {runValidators: true});
     res.redirect(`/login/allPlaces`);
 });
+//Delete Route
+app.delete("/login/allPlaces/:id", async (req,res) =>{
+    let {id} = req.params;
+    let deletedListing = await Listing.findByIdAndDelete(id);
+    res.redirect("/login/allPlaces");
+});
 
 
 
