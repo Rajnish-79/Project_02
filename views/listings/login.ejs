@@ -2,20 +2,15 @@
 <body>
     <section class="slogin">
         <div class="login container">
-            <h4 class="login-style">Login</h4>
-            <form  method="POST" action="/login/allPlaces">
-                <div class="login-style">
-                    <label for="user">Username:</label>
-                    <input type="text" id="user" placeholder="Enter username" name="username" required/>
-                </div>
-                <div class="login-style">
-                    <label for="password">Password:</label>
-                    <input type="password" placeholder="Enter password" name="password" required/>
-                </div>
-                <button class="btn-primary">Login</button>
-            </form>
+            <div class="login-box">
+                <h2>Login</h2>
+                <form action="/login/allPlaces" method="POST">
+                    <input type="text" name="username" placeholder="Username" required />
+                    <input type="password" name="password" placeholder="Password" required />
+                    <button type="submit">Login</button>
+                 </form>
+            </div>
+            
         </div>
     </section>
- 
-	
 </body>

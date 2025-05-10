@@ -4,7 +4,9 @@ const mongoose = require("mongoose");
 const Listing = require("./models/listing.js");
 const path = require("path");
 const methodOverride = require("method-override");
-const ejsMate =require("ejs-mate")
+const ejsMate =require("ejs-mate");
+const ExpressError = require("./ExpressError.js");
+
 
 
 const MONGO_URL = "mongodb://localhost:27017/Unseen_Muzaffarpur";
@@ -64,17 +66,28 @@ app.get("/mall",async (req,res) =>{
     const allMall = await Listing.find({type:"Mall"});
     res.render("./listings/mall.ejs",{allMall});
 });
+//Login Routes
 app.get("/login/allPlaces", async(req,res) =>{
     const allPlaces = await Listing.find({});
-    res.render("./login/all_places.ejs",{allPlaces});
+    res.render("./login/all_places.ejs", { allPlaces });
+});
+app.post("/login/allPlaces", async (req, res) => {
+  const { username, password } = req.body;
+
+  if (username === "OnlyTeam" && password === "474910") {
+    const allPlaces = await Listing.find({});
+    return res.render("./login/all_places.ejs", { allPlaces }); // ✅ Add return here
+  }
+
+  return res.render("./listings/loginHelp.ejs"); // ✅ Also add return here
 });
 //Add new Places
 app.get("/login/allPlaces/new", (req,res) =>{
     res.render("./login/new.ejs");
 });
 //All Places
-app.post("/login/allPlaces", async (req,res)=>{
-    let newPlace =  new Listing(req.body.allPlaces);
+app.post("/login/allPlaces/add",async (req,res)=>{
+    let newPlace =  new Listing(req.body.add);
     await newPlace.save();
     res.redirect("/login/allPlaces");
   });
