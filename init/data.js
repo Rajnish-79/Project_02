@@ -234,7 +234,7 @@ const alldata = [
     },
     {
         title:"Vishal Mega Mart",
-        description:"NA",
+        description:"fj;lkdjfa;lkdjg",
         image:"NA",
         location:"NA",
         city:"Muzaffarpur",
