@@ -18,7 +18,7 @@ const alldata = [
     
     {
         title:"Devi Mandir",
-        description:"The famous Raj Rajeshwari Devi Temple, located in Umashankar Prasad Lane of the city, is considered one of the major Shakti Peeths of North Bihar. Devotees visit the temple throughout the year. It is said that hardly any shopkeeper in the city opens their store without first seeking the blessings of the goddess. It is believed that the presiding deity, Mata Shodashi, fulfills the wishes of every devotee. During Navratri, the temple witnesses a massive crowd of lakhs of people. Grand aartis are performed in the morning and evening during Navratri, attracting a large number of devotees. The temple premises become so crowded that there’s barely any space to step. Each year, the number of devotees continues to grow",
+        description:"The famous Raj Rajeshwari Devi Temple, located in Umashankar Prasad Lane of the city, is considered one of the major Shakti Peeths of North Bihar. Devotees visit the temple throughout the year. It is said that hardly any shopkeeper in the city opens their store without first seeking the blessings of the goddess. It is believed that the presiding deity, Mata Shodashi, fulfills the wishes of every devotee. During Navratri, the temple witnesses a massive crowd of lakhs of people. Grand aartis are performed in the morning and evening during Navratri, attracting a large number of devotees. The temple premises become so crowded that there’s barely any space to step. ",
         image:"https://www.seawatersports.com/images/places/devi-mandir.png",
         location:"Mahammadpur Kazi, Mithanpura, Ramna-842002",
         city:"Muzaffarpur",
@@ -34,7 +34,7 @@ const alldata = [
     },
     {
         title:"Chhinmastika Mandir",
-        description:"People say the temple has many unique features. Although the goddess is in her left-oriented (Vam) form and is associated with sacrifice, she is worshipped here in a pure Vaishnav (non-violent) tradition. Devotees and spiritual practitioners come from far and wide to perform sadhana (spiritual practice) and attain tantric powers. The Nisha Puja performed on every Amavasya (new moon night) holds special significance here. It is believed that Maa Chhinnamastika is connected to the origin point of creation. She is one of the most important goddesses among the ten Mahavidyas. According to scriptures, during the creation of the universe, the goddess beheaded herself and offered her blood to two yoginis to save the world from destruction. Great sages like Maharishi Yamadagni, Shukracharya, and Parashurama were among her chief devotees.",
+        description:"People say the temple has many unique features. Although the goddess is in her left-oriented (Vam) form and is associated with sacrifice, she is worshipped here in a pure Vaishnav (non-violent) tradition. Devotees and spiritual practitioners come from far and wide to perform sadhana (spiritual practice) and attain tantric powers. The Nisha Puja performed on every Amavasya (new moon night) holds special significance here. It is believed that Maa Chhinnamastika is connected to the origin point of creation. She is one of the most important goddesses among the ten Mahavidyas. ",
         image:"https://www.bhaktvatsal.com/public/uploads/878e1079aa223288e5cb4d93cdb7ad43.webp",
         location:"NH-28 Kanti Muzaffarpur",
         city:"Muzaffarpur",

@@ -2,16 +2,16 @@
 <body>
     <% for(let data of allHotel){%>
         
-        <div class="col-md-4 col-sm-6" style="margin-top: 20px;">
+        <div class="col-md-4 col-sm-6" style="margin-top: 20px; height: 60rem;">
             <div class="single-blog-item">
                 <div class="single-blog-item-img">
                     <img src="<%=data.image%>" alt="blog image" class="img-sizel">
                 </div>
-                 <div>
+                <div style="padding-left: 8px; height: 80%;">
                         
                     <p>
                         <b><%=data.title%></b><br>
-                        <p><%=data.description%></p><br>
+                        <%=data.description%><br>
                         <b>Location:</b> <%=data.location%> <br>
                     </p>
                 </div>
