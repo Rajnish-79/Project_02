@@ -5,13 +5,10 @@ const Listing = require("./models/listing.js");
 const path = require("path");
 const methodOverride = require("method-override");
 const ejsMate =require("ejs-mate");
-<<<<<<< HEAD
-=======
 const ExpressError = require("./ExpressError.js");
 
 
 
->>>>>>> 3943f0ce33131e66867a90add8ffb52b7b918246
 const MONGO_URL = "mongodb://localhost:27017/Unseen_Muzaffarpur";
 
 main().then(() =>{
