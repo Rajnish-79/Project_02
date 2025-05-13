@@ -426,7 +426,7 @@ const alldata = [
     {
         title:"The Landmark Hotel",
         description:"A modern hotel offering comfortable accommodations and excellent service.",
-        image:"https://lh3.googleusercontent.com/gps-cs-s/AC9h4npC1oTgBGYZq9ye9AHSf0w6zoCstrecD7y3lgPpE2SMQ8if_dLSbloEyBiNhH8PoAG8tjbidfv9zjWIs23VmBl4oNOMkeae5_Ek8qF3gXGcUCo8ftdCQUGtb4qM91ljLDuDVEqt=s1360-w1360-h1020-rw",
+        image:"https://r1imghtlak.mmtcdn.com/26b984de221a11edbcfe0a58a9feac02.jpg",
         location:"Maripur Chowk, above Reliance Digital, Maripur, Muzaffarpur.(Near the city center)",
         city:"Muzaffarpur",
         type:"Hotel",
