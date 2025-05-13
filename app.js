@@ -3,29 +3,24 @@ const app = express();
 const mongoose = require("mongoose");
 const Listing = require("./models/listing.js");
 const path = require("path");
+const dotenv = require('dotenv');
+const connectDB = require("./config/db.js");
 const methodOverride = require("method-override");
 const ejsMate =require("ejs-mate");
 const ExpressError = require("./ExpressError.js");
+const PORT = process.env.PORT || 9090;
 
+dotenv.config();
+connectDB();
 
-
-const MONGO_URL = "mongodb://localhost:27017/Unseen_Muzaffarpur";
-
-main().then(() =>{
-    console.log("Connected to DB");
-}).catch(err =>{
-    console.log(err);
-});
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
 app.use(express.urlencoded({extended: true}));
 app.use(methodOverride("_method"));
 app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname,"/public")));
+app.use(express.json());
 
-async function main(){
-    await mongoose.connect(MONGO_URL);   
-}
 app.set("view engine","ejs");
 app.set("views", path.join(__dirname,"views"));
 
@@ -118,6 +113,6 @@ app.delete("/login/allPlaces/:id", async (req,res) =>{
 
 
 
-app.listen( 9090, ()=>{
-    console.log("Server is listening to port 9090 ");
+app.listen( PORT, ()=>{
+    console.log(`Server is listening to port ${PORT} `);
 });

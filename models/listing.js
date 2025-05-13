@@ -5,15 +5,16 @@ const Schema = mongoose.Schema;
 const listingSchema = new Schema ({
     title:{
         type:String,
-        required:true,
+        require:true,
     },
     description:String,
     image:{
         type:String,
+        require:true,
     },
     location:{
         type:String,
-        required:true,
+        require:true,
     },
     city:{
         type:String,
@@ -21,7 +22,7 @@ const listingSchema = new Schema ({
     },
     type:{
         type:String,
-        required:true,
+        require:true,
     },
 });
 
