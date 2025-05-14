@@ -314,7 +314,7 @@ const alldata = [
     {
         title:"Jackson Diner By Moti Mahal of India",
         description:"We offer 10 Franchise Models to choose from that will allow you to customize your restaurant to your personalized needs.",
-        image:"https://lh3.googleusercontent.com/p/AF1QipNc8ICesR28yMlIRp6hyG23NXcB6rkEHm2i_44=w141-h235-n-k-no-nu",
+        image:"https://b.zmtcdn.com/data/pictures/8/21153998/4d581016cbece0e1a13051cc0101269b.jpg",
         location:"Second Floor, Bansal Tower, Club Rd, in front of Hotel The Park, Mahammadpur Kazi, Mithanpura, Muzaffarpur",
         city:"Muzaffarpur",
         type:"Restaurant",
@@ -322,7 +322,7 @@ const alldata = [
     {
         title:"CAFE 23",
         description:"For those who appreciate quality food, a warm atmosphere, and attentive service, Cafe 23 in Amgola, Muzaffarpur is a must-visit destination.",
-        image:"https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrVqZR7FF6wF0-BMaL5bQd0gzKMMAwhZGNBLuvz3HK8wsgAMNS0Vv39koF886RBKLN-vvSAlvrwP6n26vFvkzV8Y1-Y6UvyQUDGnfru7-QZHfvn7W4l70g8bCrNur4PM_fYyh-mLg=s1360-w1360-h1020-rw",
+        image:"https://content.jdmagicbox.com/comp/muzaffarpur/a1/9999px621.x621.230309120737.t7a1/catalogue/cafe-23-amgola-muzaffarpur-restaurants-t8j4brrvk7-250.jpg",
         location:" Amgola Rd, opp. Orient club, near bharamakumari, Satsang Vihar, Muzaffarpur, Bihar 842001",
         city:"Muzaffarpur",
         type:"Restaurant",
@@ -354,7 +354,7 @@ const alldata = [
     {
         title:"The Table cafe",
         description:"Has all you can eat · Has outdoor seating · Good for kids birthday",
-        image:"https://lh3.googleusercontent.com/p/AF1QipNcR9s5DOdE5rD8aOPbUnfQZ3uJnusV1fTkOUvr=s1360-w1360-h1020-rw",
+        image:"https://content.jdmagicbox.com/comp/muzaffarpur/d6/9999px621.x621.230312190601.y3d6/catalogue/table-talk-cafe-pokhraira-muzaffarpur-cafe-consultants-e142hugblu-250.jpg",
         location:" NH-28, near Holi mission school, Sherpur, Muzaffarpur",
         city:"Muzaffarpur",
         type:"Restaurant",
@@ -378,7 +378,7 @@ const alldata = [
     {
         title:"THE DHABA-YARA DI RASOI",
         description:"Soul satisfying taste. Very good and peaceful ambience. Drinks were also good. The most important thing is that everything is fresh. I have ordered momo which was really very nice and butter naan and paneer kalezi, the taste of paneer kalezi was like superb. It’s also budget friendly and very nice place to go with friends and family",
-        image:"https://lh3.googleusercontent.com/gps-cs-s/AC9h4npQ1GJWjV5HSJ9YnvgctY1zbi5eWzd8BznHd-eVy_zgsq6Yk6qlOm7IufhpHkGN0uzx5F8gI-hNYnIABH_BxIDTyydkdSPREI_LapFkU2iDL_hryICbtWnMqZkbNI14BrU8yhOePA=s1360-w1360-h1020-rw",
+        image:"https://content.jdmagicbox.com/comp/muzaffarpur/v5/9999px621.x621.220901210314.d8v5/catalogue/the-dhaba-yara-di-rasoi-ramna-muzaffarpur-restaurants-mqds9esp69.jpg",
         location:"BALIGAR GARDEN, CLUB ROAD INFRONT OF GRAND MALL",
         city:"Muzaffarpur",
         type:"Restaurant",
@@ -386,7 +386,7 @@ const alldata = [
     {
         title:"Chatkara Cafe",
         description:"For those who appreciate quality food, a warm atmosphere, and attentive service",
-        image:"https://lh3.googleusercontent.com/p/AF1QipPz4mPf1titjNdYHHnyeKOaSx45GrUqCFmtZmfC=s1360-w1360-h1020-rw",
+        image:"https://content3.jdmagicbox.com/comp/jaipur/y9/0141px141.x141.161119112758.k8y9/catalogue/chatkara-dhaba-jagatpura-getor-jaipur-restaurants-q4crw2pxtj.jpg",
         location:"near V-mart, Mahammadpur Kazi, Aghoria Bazar, Saadpur, Muzaffarpur, Bihar 842002",
         city:"Muzaffarpur",
         type:"Restaurant",
@@ -418,7 +418,7 @@ const alldata = [
     {
         title:"McDonald's",
         description:"It's recognized as a popular fast-food restaurant known for quality ingredients and service. ",
-        image:"https://lh3.googleusercontent.com/gps-cs-s/AC9h4npgBmodFOPxdHAa1lk5obRV-HPEyKK9N6fEGdhHzkuCk14rQzdt9xTrNq3lmy46rhLyh_-ilgSRTcL6ea50DF767mTBx1JGxmTdlgJgQ2CdZMCgu58vlUMQ1VyMWVJrF8qcSVI=s1360-w1360-h1020-rw",
+        image:"https://pbs.twimg.com/media/GM9ORmzWcAA-d7C?format=jpg&name=large",
         location:"G06 Ground, Dwarka City Center Mall, Shop No- G01 to, NH-28, Majhaulia Rd, opposite MPS Science College, DCC, Muzaffarpur, Bihar 842002",
         city:"Muzaffarpur",
         type:"Restaurant",
@@ -426,7 +426,7 @@ const alldata = [
     {
         title:"The Landmark Hotel",
         description:"A modern hotel offering comfortable accommodations and excellent service.",
-        image:"https://lh3.googleusercontent.com/gps-cs-s/AC9h4npC1oTgBGYZq9ye9AHSf0w6zoCstrecD7y3lgPpE2SMQ8if_dLSbloEyBiNhH8PoAG8tjbidfv9zjWIs23VmBl4oNOMkeae5_Ek8qF3gXGcUCo8ftdCQUGtb4qM91ljLDuDVEqt=s1360-w1360-h1020-rw",
+        image:"https://r1imghtlak.mmtcdn.com/26b984de221a11edbcfe0a58a9feac02.jpg",
         location:"Maripur Chowk, above Reliance Digital, Maripur, Muzaffarpur.(Near the city center)",
         city:"Muzaffarpur",
         type:"Hotel",
@@ -547,7 +547,7 @@ const alldata = [
         title:"Hotel Shivam",
         description:"Budget accommodation with essential services.",
         image:"https://content3.jdmagicbox.com/comp/def_content/hotels-seating/dfa3s0kcpb-hotels-seating-2-c8k8v.jpg",
-        location:"B.C. Plaza, Motijheel Rd, opp. Jaandar Shoes & Sanjay Opticals, Muzaffarpur, Bihar 842001.",
+        location:"B.C. Plaza, Motijheel Road, opp. Jaandar Shoes & Sanjay Opticals, Muzaffarpur, Bihar 842001.",
         city:"Muzaffarpur",
         type:"Hotel"
     },
