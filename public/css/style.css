@@ -917,6 +917,22 @@ nav.navbar.bootsnav .navbar-toggle i{color: #007BFF;}
     width:40rem;
     height:30rem;
 }
+.text_s{
+    height:33rem;
+    width:35rem;
+}
+.text_n{
+    height:54rem;
+    width:35rem;
+}
+.text_r{
+    height: 21rem;
+    width:30rem;
+}
+.work_s{
+    height:46rem;
+    width:35rem;
+}
 /* Tema_member section */
 .single-explore-img img{
     border:1px solid blue;

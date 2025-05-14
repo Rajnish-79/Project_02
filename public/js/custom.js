@@ -1,11 +1,7 @@
 $(document).ready(function(){
 	"use strict";
     
-        /*==================================
-* Author        : "ThemeSine"
-* Template Name : Listrace directory HTML Template
-* Version       : 1.0
-==================================== */
+
 
 
 
