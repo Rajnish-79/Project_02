@@ -1014,6 +1014,52 @@ nav.navbar.bootsnav .navbar-toggle i{color: #007BFF;}
     .login-box button:hover {
       background: #40281d;
     }
+
+    /* Search style */
+    .not-found-wrapper {
+  height: 100vh;
+  background: linear-gradient(135deg, #cfe6fc, #e9ecef);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-box {
+  background-color: #fff;
+  padding: 50px 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+.not-found-box h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.not-found-box p {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+.retry-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.retry-button:hover {
+  background-color: #0056b3;
+}
+
     
   
 

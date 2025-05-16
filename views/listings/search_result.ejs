@@ -1,0 +1,21 @@
+<% layout("./layouts/boilerplate") %>
+<body>
+    <% for(let data of results){%>
+        
+        <div class="col-md-4 col-sm-6" style="margin-top: 20px; height: 70rem;">
+            <div class="single-blog-item">
+                <div class="single-blog-item-img">
+                    <img src="<%=data.image%>" alt="blog image" class="img-sizel">
+                </div>
+                <div style="padding-left: 8px; height: 25rem;">
+                        
+                    <p>
+                        <b><%=data.title%></b><br>
+                        <%=data.description%><br>
+                        <b>Location:</b> <%=data.location%> <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    <%}%>
+</body>

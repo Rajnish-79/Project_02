@@ -51,6 +51,15 @@ app.set("view engine","ejs");
 app.set("views", path.join(__dirname,"views"));
 
 
+app.post("/search", async (req, res) => {
+  const { type, location } = req.body;
+
+  const results= await Listing.find({type:type});
+  if(results.length === 0){
+    return res.render("listings/not_found.ejs");
+  }
+  res.render("listings/search_result.ejs", { results });
+});
 app.get("/" ,(req,res) =>{
     res.render("./listings/index.ejs")
 });

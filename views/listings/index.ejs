@@ -13,34 +13,35 @@
 					</p>
 				</div>
 				<div class="welcome-hero-serch-box">
-					<div class="welcome-hero-form">
-						<div class="single-welcome-hero-form">
-							<h3>what?</h3>
-							<form action="index.html">
-								<input type="text" placeholder="Ex: Turist place, Mall, Restaurant" />
-							</form>
-							<div class="welcome-hero-form-icon">
+					<form method="POST" action="/search">
+						<div class="welcome-hero-form">
+
+							<!-- What Field -->
+							<div class="single-welcome-hero-form">
+								<h3>what?</h3>
+								<input type="text" name="type" placeholder="Ex: Park, Temple, Mall, Restaurant" required/>
+								<div class="welcome-hero-form-icon">
 								<i class="flaticon-list-with-dots"></i>
 							</div>
 						</div>
+
+						<!-- Location Field -->
 						<div class="single-welcome-hero-form">
 							<h3>location</h3>
-							<form action="index.html">
-								<input type="text" placeholder="Ex: Bhagawanpur,Mithanpura, Bela" />
-							</form>
+							<input type="text" name="location" placeholder="Ex: Bhagawanpur, Mithanpura, Bela" />
 							<div class="welcome-hero-form-icon">
 								<i class="flaticon-gps-fixed-indicator"></i>
 							</div>
 						</div>
-					</div>
-					<div class="welcome-hero-serch">
-						<button class="welcome-hero-btn" >
-							 search  <i data-feather="search"></i> 
-						</button>
-					</div>
-				</div>
+						<!-- Search Button -->
+						<div class="welcome-hero-serch">
+							<button type="submit" class="welcome-hero-btn">
+								search <i data-feather="search"></i>
+							</button>
+						</div>
+					</form>
+				</div><!--/.container-->
 			</div>
-
 		</section><!--/.welcome-hero-->
 		<!--welcome-hero end -->
 
